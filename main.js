@@ -23,10 +23,10 @@ function createWindow() {
     },
   });
 
-  console.log("개발자 도구 열기"); // 개발자 도구 열기 로그 추가
-  updateWin.webContents.openDevTools();
+  //console.log("개발자 도구 열기"); // 개발자 도구 열기 로그 추가
+  //updateWin.webContents.openDevTools();
 
-  updateWin.loadURL(`https://re-dam.vercel.app/`);
+  updateWin.loadURL(`https://new-cell-admin.vercel.app//`);
 }
 
 autoUpdater.setFeedURL({

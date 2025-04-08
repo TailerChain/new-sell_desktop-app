@@ -9,3 +9,5 @@
 ## 1.0.4 : public test
 
 ## 0.1.0-alpha : re-dam.vercel.app 연결 및 electron menu/title bar 삭제
+
+## 0.1.1-alpha : https://new-cell-admin.vercel.app/ 로 링크 변경
