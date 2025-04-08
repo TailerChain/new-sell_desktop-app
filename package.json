@@ -17,12 +17,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/TailerChain/new-sell_desktop-app.git"
+    "url": "https://github.com/TailorChain-inc/new-sell_desktop-app.git"
   },
   "build": {
     "publish": {
       "provider": "github",
-      "owner": "TailorChain",
+      "owner": "TailorChain-inc",
       "repo": "new-sell_desktop-app",
       "releaseType": "release"
     },

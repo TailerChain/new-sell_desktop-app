@@ -31,10 +31,10 @@ function createWindow() {
 
 autoUpdater.setFeedURL({
   provider: 'github',
-  owner: 'TailorChain',
-  repo: 'redamDAPP',
+  owner: 'TailorChain-inc',
+  repo: 'new-sell_desktop-app',
   private: false,
-  // token: process.env.GH_TOKEN
+  token: process.env.GH_TOKEN
 });
 
 autoUpdater.on("checking-for-update", () => {
