@@ -1,0 +1,35 @@
+{
+  "name": "electron-auto-update",
+  "version": "0.1.0-alpha",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "deploy": "electron-builder build --win --publish always"
+  },
+  "devDependencies": {
+    "electron": "^18.0.3",
+    "electron-builder": "~22.10.5"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "electron-updater": "^4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TailerChain/new-sell_desktop-app.git"
+  },
+  "build": {
+    "publish": {
+      "provider": "github",
+      "owner": "TailorChain",
+      "repo": "new-sell_desktop-app",
+      "releaseType": "release"
+    },
+    "appId": "com.tailorchain.redamDAPP",
+    "productName": "redamDAPP",
+    "win": {
+      "icon": "./src/assets/icon.ico"
+    }
+  }
+}

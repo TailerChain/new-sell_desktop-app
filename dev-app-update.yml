@@ -1,0 +1,4 @@
+provider: github
+owner: TailorChain # GitHub 저장소 소유자
+repo: new-sell_desktop-app # GitHub 저장소 이름
+releaseType: release # 릴리스 유형 (release 또는 prerelease)
