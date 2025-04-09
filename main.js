@@ -1,4 +1,4 @@
-const { app, dialog, BrowserWindow } = require('electron');
+const { app, dialog, BrowserWindow } = require("electron");
 const { autoUpdater } = require("electron-updater");
 require("dotenv").config();
 
@@ -15,26 +15,29 @@ function writeMessageToWindow(text) {
 
 function createWindow() {
   updateWin = new BrowserWindow({
-    titleBarStyle: 'hiddenInset',
+    width: 1600,
+    height: 900,
+    titleBarStyle: "hiddenInset",
     frame: false,
     webPreferences: {
       nodeIntegration: true,
       contextIsolation: false,
+      devTools: false,
     },
   });
 
   //console.log("개발자 도구 열기"); // 개발자 도구 열기 로그 추가
   //updateWin.webContents.openDevTools();
 
-  updateWin.loadURL(`https://new-cell-admin.vercel.app//`);
+  updateWin.loadURL(`https://new-cell-admin.vercel.app/`);
 }
 
 autoUpdater.setFeedURL({
-  provider: 'github',
-  owner: 'TailorChain-inc',
-  repo: 'new-sell_desktop-app',
+  provider: "github",
+  owner: "TailorChain-inc",
+  repo: "new-sell_desktop-app",
   private: false,
-  token: process.env.GH_TOKEN
+  token: process.env.GH_TOKEN,
 });
 
 autoUpdater.on("checking-for-update", () => {
@@ -79,10 +82,10 @@ autoUpdater.on("update-downloaded", (info) => {
     writeMessageToWindow(res.response.toString());
 
     if (res.response == 0) {
-      writeMessageToWindow('프로그램 종료 및 업데이트');
+      writeMessageToWindow("프로그램 종료 및 업데이트");
       autoUpdater.quitAndInstall();
     } else {
-      writeMessageToWindow('프로그램 업데이트 안함');
+      writeMessageToWindow("프로그램 업데이트 안함");
     }
   });
 });

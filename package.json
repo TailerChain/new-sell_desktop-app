@@ -1,6 +1,6 @@
 {
   "name": "electron-auto-update",
-  "version": "0.1.1-alpha",
+  "version": "0.1.2-alpha",
   "description": "",
   "main": "main.js",
   "scripts": {
@@ -8,12 +8,13 @@
     "deploy": "electron-builder build --win --publish always"
   },
   "devDependencies": {
-    "electron": "^18.0.3",
-    "electron-builder": "~22.10.5"
+    "electron": "^35.1.4",
+    "electron-builder": "^26.0.12"
   },
   "dependencies": {
     "dotenv": "^16.4.7",
-    "electron-updater": "^4.0.0"
+    "electron-auto-update": "file:",
+    "electron-updater": "^6.6.2"
   },
   "repository": {
     "type": "git",
