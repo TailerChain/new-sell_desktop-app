@@ -12,4 +12,6 @@
 
 ## 0.1.1-alpha : https://new-cell-admin.vercel.app/ 로 링크 변경
 
-## 0.1.2-alpha : 화면 좌우 배율 16:9, f12금지
+## 0.1.2-alpha : 화면 좌우 배율 수정, f12금지
+
+## 0.1.3-alpha : 종속성 문제 해결
